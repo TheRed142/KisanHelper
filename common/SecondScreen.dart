@@ -32,7 +32,7 @@ class _SecondScreenState extends State<SecondScreen> {
       FormData formData =
           new FormData.from({"file": new UploadFileInfo(filePath, filename)});
       Response response = await Dio()
-          .post("http://192.168.0.106:5000/getNoteText", data: formData, options: Options(
+          .post("Your API", data: formData, options: Options(
         followRedirects: false,
         validateStatus: (status) { return status < 500; }
     ),);
