@@ -5,7 +5,7 @@ import 'package:http/http.dart';
 class Network{
 
   Future<servermodel> getDetails() async{
-    var finalUrl = "http://192.168.0.106:5000/getNoteText";
+    var finalUrl = "Your API";
 
     final response = await get(Uri.encodeFull(finalUrl)); 
 
